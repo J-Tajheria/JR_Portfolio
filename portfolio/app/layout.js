@@ -18,7 +18,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    // scroll-smooth is used to make the page scroll smoothly
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`}
       >
