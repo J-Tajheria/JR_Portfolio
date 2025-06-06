@@ -1,4 +1,4 @@
-import { assets } from '@/assests/assets'
+import { assets } from '@/assets/assets'
 import React, { useRef, useState, useEffect } from 'react'
 import Image from 'next/image'
 

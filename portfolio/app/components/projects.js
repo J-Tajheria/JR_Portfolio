@@ -1,4 +1,4 @@
-import { assets, workData } from '@/assests/assets'
+import { assets, workData } from '@/assets/assets'
 import React from 'react'
 import Image from 'next/image'
 
