@@ -2,13 +2,13 @@ import { assets, workData } from '@/assets/assets'
 import React from 'react'
 import Image from 'next/image'
 
-const Projects = () => {
+const Projects = (isDarkMode) => {
   return (
     <div id='projects' className='w-full px-[12%] py-10 scroll-mt-20'>
         <h4 className= 'text-center mb-2 text-lg font-Ovo'>My Portfolio</h4>
         <h2 className= 'text-center text-5xl font-Ovo'> My latest work </h2>
         <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>Welcome to my portfolio. Here you can find some of my latest work.</p>
-        <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 max-w-6xl mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 max-w-6xl mx-auto dark:text-black'>
             {workData.map((project, index) => (
                 <div 
                 key={index}  
@@ -26,9 +26,10 @@ const Projects = () => {
                 </div>
             ))}
         </div>
-        <a href='' className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500'> 
+        <a href='' className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500
+        dark:text-white dark:border-white dark:hover:bg-darkHover'> 
             Show more 
-            <Image src={assets.right_arrow_bold} alt='rightArrow' className='w-4'/>
+            <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt='rightArrow' className='w-4'/>
         </a>
     </div>
   )

@@ -18,10 +18,10 @@ const Header = () => {
         I am a software engineer with a passion for creating user-friendly and efficient web applications. I specialize in React, Next.js, and Tailwind CSS, and I am always looking for new and innovative ways to improve my skills.
       </p>
       <div className='flex flex-col sm:flex-row items-center gap-4'mt-4>
-        <a href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>
+        <a href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent'>
           Contact Me
         <Image src={assets.right_arrow_white} alt="right_arrow" className='w-4'/></a>
-        <a href="/sample-resume.pdf" download className='px-10 py-3 border border-gray-500 rounded-full flex items-center gap-2'>
+        <a href="/sample-resume.pdf" download className='px-10 py-3 border border-gray-500 rounded-full flex items-center gap-2 dark:text-black dark:bg-white'>
           My CV
         <Image src={assets.download_icon} alt="download_icon" className='w-4'/></a>
       </div>
