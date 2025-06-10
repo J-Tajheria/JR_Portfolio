@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import { assets, workData } from '@/assets/assets';
 import Image from 'next/image';
-import {motion} from 'motion/react';
+import {motion} from 'framer-motion';
 
-const Contact = () => {
+const Contact = ({ isDarkMode }) => {
 
     const [result, setResult] = useState('');
 

@@ -1,9 +1,11 @@
 import { assets, workData } from '@/assets/assets'
 import React from 'react'
 import Image from 'next/image'
-import {motion} from 'motion/react'
+import { motion } from 'framer-motion'
 
-const Projects = (isDarkMode) => {
+const Projects = (props) => {
+  const { isDarkMode } = props;
+  
   return (
     <motion.div 
     initial={{opacity: 0}} whileInView={{opacity:1}} transition={{duration:1}}
@@ -18,7 +20,7 @@ const Projects = (isDarkMode) => {
         initial={{opacity: 0}} whileInView={{opacity:1}} transition={{duration:0.6, delay:0.9}}
         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>Welcome to my portfolio. Here you can find some of my latest work.</motion.p>
         <motion.div 
-        nitial={{opacity: 0}} whileInView={{opacity:1}} transition={{duration:0.5, delay:0.7}}
+        initial={{opacity: 0}} whileInView={{opacity:1}} transition={{duration:0.5, delay:0.7}}
         className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 max-w-6xl mx-auto dark:text-black'>
             {workData.map((project, index) => (
                 <motion.div 
@@ -26,7 +28,7 @@ const Projects = (isDarkMode) => {
                 transition={{duration:0.3}}
                 key={index}  
                 className='aspect-[4/3] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group' 
-                style={{backgroundImage: `url(${project.bgImage.src})`}}>
+                style={{backgroundImage: `url(${project.bgImage})`}}>
                     <div className='bg-white w-[90%] sm:w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-2 sm:py-3 px-3 sm:px-5 flex justify-between items-center duration-500 group-hover:bottom-7'>
                         <div className='flex-1 min-w-0'>
                             <h2 className='font-semibold text-sm sm:text-base truncate'>{project.title}</h2>

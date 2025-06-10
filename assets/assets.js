@@ -36,11 +36,6 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import portfolio_headshot from './portfolio-headshot.jpeg';
-import work1 from '/public/work-1.png';
-import work2 from '/public/work-2.png';
-import work3 from '/public/work-3.png';
-import work4 from '/public/work-4.png';
-import footerbgcolor from '/public/footer-bg-color.png';
 
 export const assets = {
     user_image,
@@ -80,34 +75,29 @@ export const assets = {
     send_icon,
     right_arrow_bold,
     right_arrow_bold_dark,
-    portfolio_headshot,
-    work1,
-    work2,
-    work3,
-    work4,
-    footerbgcolor
+    portfolio_headshot
 };
 
 export const workData = [
     {
         title: 'Frontend project',
         description: 'Web Design',
-        bgImage: work1,
+        bgImage: '/work-1.png',
     },
     {
         title: 'Geo based app',
         description: 'Mobile App',
-        bgImage: work2,
+        bgImage: '/work-2.png',
     },
     {
         title: 'Photography site',
         description: 'Web Design',
-        bgImage: work3,
+        bgImage: '/work-3.png',
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
-        bgImage: work4,
+        bgImage: '/work-4.png',
     },
 ]
 
