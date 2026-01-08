@@ -21,22 +21,48 @@ const Projects = (props) => {
         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>Welcome to my portfolio. Here you can find some of my latest work.</motion.p>
         <motion.div 
         initial={{opacity: 0}} whileInView={{opacity:1}} transition={{duration:0.5, delay:0.7}}
-        className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-5 max-w-6xl mx-auto dark:text-black'>
+        className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 max-w-6xl mx-auto dark:text-black'>
             {workData.map((project, index) => (
                 <motion.div 
                 whileHover={{scale:1.05}}
                 transition={{duration:0.3}}
                 key={index}  
-                className='aspect-[4/3] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group' 
-                style={{backgroundImage: `url(${project.bgImage})`}}>
-                    <div className='bg-white w-[90%] sm:w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-2 sm:py-3 px-3 sm:px-5 flex justify-between items-center duration-500 group-hover:bottom-7'>
+                className='aspect-[16/9] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group' 
+                style={{
+                    backgroundImage: `url(${project.bgImage})`
+                    }}>
+                    <div className='bg-white w-[90%] sm:w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-4 sm:py-5 px-4 sm:px-6 flex flex-col justify-between items-start duration-500 group-hover:bottom-7'>
                         <div className='flex-1 min-w-0'>
-                            <h2 className='font-semibold text-sm sm:text-base truncate'>{project.title}</h2>
-                            <p className='text-xs sm:text-sm text-gray-700 truncate'>{project.description}</p>
+                            <h2 className='font-semibold text-xs sm:text-base truncate'>{project.title}</h2>
+                            <p className='text-xs sm:text-xs text-gray-700'>{project.description}</p>
+                            <ul>
+                                <li>
+                                {project.link && (
+                                    <a 
+                                        href={project.link} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className='text-xs sm:text-sm text-blue-500 underline'>
+                                        {project.link}
+                                    </a>
+                                )}
+                                </li>
+                                <li>
+                                {project.repo && (
+                                <a 
+                                    href={project.repo} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className='text-xs sm:text-sm text-blue-500 underline'>
+                                    {project.repo}
+                                </a>
+                                )}
+                                </li>
+                            </ul>
                         </div>
-                        <div className='border rounded-full border-black w-7 sm:w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition ml-2'>
+                        {/* <div className='border rounded-full border-black w-7 sm:w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition ml-2'>
                             <Image src={assets.send_icon} alt='send_icon' className='w-4 sm:w-5' />
-                        </div>
+                        </div> */}
                     </div>
                 </motion.div>
             ))}

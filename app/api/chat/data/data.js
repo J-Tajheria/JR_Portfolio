@@ -16,17 +16,17 @@ export const cvData = {
         startDate: "Oct 2023",
         endDate: "Present",
         responsibilities: [
-          "Built and tested RESTful API endpoints in JavaScript and TypeScript for a Generative AI platform.",
-          "Developed frontend features using React, Next.js, TypeScript, Zustand, and Tailwind CSS.",
-          "Co-led launch of Portfolio Epic feature with responsive UI under tight deadlines.",
-          "Debugged complex React state and async flow issues.",
-          "Collaborated with backend and design teams for seamless integration.",
-          "Designed RESTful APIs using FastAPI to support real-time data flows.",
-          "Created reusable React components for efficiency and standardization.",
-          "Implemented unit, integration, and UAT testing for UI reliability.",
-          "Developed dashboards with AWS QuickSight for real-time insights.",
-          "Built an NLP backend service to translate natural language into SQL queries.",
-          "Improved PowerBI analytics with data cleansing and preparation."
+          "Designed and implemented end-to-end agent workflows incorporating internal API calls, error handling, and execution logic.",
+          "Built and optimized RESTful APIs using FastAPI, JavaScript, and TypeScript to support real-time data flows and dynamic UI interactions.",
+          "Developed scalable frontend features using React, Next.js, TypeScript, Zustand, and Tailwind CSS.",
+          "Co-led the launch of the Portfolio Epic feature under tight deadlines.",
+          "Debugged complex React state management and async flow issues to unblock production features.",
+          "Balanced speed and resilience during async implementation, prioritizing user experience while managing technical debt.",
+          "Implemented comprehensive unit and UAT testing across APIs, workflows, and UI components.",
+          "Created reusable, modular React components to standardize design patterns and ensure responsive layouts.",
+          "Worked with stakeholders to design dashboards and an NLP-to-SQL service, improving data accessibility for analysts.",
+          "Engaged directly with non-technical users to iterate on the NLP-to-SQL service based on real-world workflows.",
+          "Partnered with backend, design, and data teams to ship polished interfaces and enhance analytics pipelines (PowerBI data preparation)."
         ]
       },
       {
@@ -36,9 +36,10 @@ export const cvData = {
         startDate: "Nov 2022",
         endDate: "Oct 2023",
         responsibilities: [
-          "Designed and implemented gRPC and RESTful APIs.",
-          "Developed an interactive OWASP Top 10 security game.",
-          "Created Masterclass training content on advanced software topics."
+          "Designed and implemented gRPC and RESTful APIs for secure, efficient distributed communication.",
+          "Developed an interactive security game simulating OWASP Top 10 vulnerabilities.",
+          "Delivered Masterclass training sessions on advanced engineering topics to improve team onboarding.",
+          "Collaborated with design and data teams to document workflows and align technical solutions with cross-functional needs."
         ]
       },
       {
@@ -48,14 +49,14 @@ export const cvData = {
         startDate: "Oct 2021",
         endDate: "Nov 2022",
         responsibilities: [
-          "Managed GitHub repo integrated with Spinnaker CI/CD and Helm charts.",
-          "Implemented GCP Secret Manager for secure data access.",
-          "Automated SonarQube tests with Spinnaker pipelines.",
-          "Updated Terraform code for security compliance.",
-          "Deployed apps using Jenkins pipelines, ensuring functionality and minimal risk."
+          "Built and managed a GitHub repository integrated with Spinnaker CI/CD pipelines and Helm charts.",
+          "Implemented GCP Secret Manager with CSI Driver for secure production secret management in banking environments.",
+          "Automated SonarQube unit test deployments via Spinnaker, reducing manual validation overhead.",
+          "Updated Terraform code to align with new versioning and security compliance requirements.",
+          "Coordinated production deployments via Jenkins CI/CD, validating application functionality and minimizing rollout risks."
         ]
       }
-    ],
+    ],    
     education: [
       {
         degree: "Bachelor of Science in Computer Science",
@@ -72,7 +73,7 @@ export const cvData = {
       "Azure OpenAI", "Generative AI",
       "Microsoft Azure", "AWS", "Google Cloud Platform",
       "Kubernetes", "Spinnaker", "Docker", "Jenkins",
-      "SQL", "MySQL", "SQLite"
+      "SQL", "MySQL", "SQLite", "Agents"
     ],
     projects: [
       {

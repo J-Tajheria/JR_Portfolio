@@ -31,8 +31,14 @@ const AboutMe = ({isDarkMode}) => {
             initial={{opacity: 0}} whileInView={{opacity:1}} transition={{duration:0.6, delay:0.8}}
                 className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'>
-                    Hello! I am a passionate developer with expertise in web development and modern technologies.
-                    I am a passionate developer with expertise in web development and modern technologies.
+                Hello! I’m a software engineer specialising in JavaScript and product development. 
+                After working within agile delivery teams at a consultancy, I gained hands-on experience shaping product requirements, 
+                collaborating with stakeholders, and understanding how technical decisions impact real workflows and users. 
+                I’m now focused on deepening my expertise in the JavaScript ecosystem and moving into a product engineering role where I can contribute not just code,
+                but product thinking and user-centric decision-making.
+
+                I care about bridging engineering and product, asking “why” before “how,” 
+                and building features that solve real user problems — not just complete tickets.
                 </p>
                 <motion.ul 
                 initial={{opacity: 0}} whileInView={{opacity:1}} transition={{duration:0.8, delay:1}}

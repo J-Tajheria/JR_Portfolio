@@ -28,12 +28,12 @@ const Header = ({ isDarkMode }) => {
       <motion.h1 
       initial={{y: -30, opacity: 0}} whileInView={{y:0, opacity:1}} transition={{duration: 0.8, delay: 0.5}}
       className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-        frontend Software Engineer based in London.
+        Product-minded Software Engineer based in London.
       </motion.h1>
       <motion.p 
       initial={{opacity: 0}} whileInView={{opacity:1}} transition={{duration: 0.6, delay: 0.7}}
       className='max-w-2xl mx-auto font-Ovo'>
-        I am a software engineer with a passion for creating user-friendly and efficient web applications. I specialize in React, Next.js, and Tailwind CSS, and I am always looking for new and innovative ways to improve my skills.
+        I am a software engineer with a passion for creating user-friendly and efficient products. I specialize in JavaScript, React, Node.JS and Tailwind CSS, and I am always looking for new and innovative ways to improve my skills.
       </motion.p>
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
         <motion.a 
@@ -43,7 +43,7 @@ const Header = ({ isDarkMode }) => {
         <Image src={assets.right_arrow_white} alt="right_arrow" className='w-4'/></motion.a>
         <motion.a 
         initial={{y: 30, opacity: 0}} whileInView={{y:0, opacity:1}} transition={{duration: 0.6, delay: 1}}
-        href="/JR_resume.pdf"
+        href="/JRFullstackResume.pdf"
         download
         className='px-10 py-3 border border-gray-500 rounded-full flex items-center gap-2 dark:text-black dark:bg-white'>
           My CV
