@@ -5,13 +5,13 @@ import path from 'path';
 export async function GET() {
   try {
     // Read the CV file from the public directory
-    const filePath = path.join(process.cwd(), 'public', 'Jordan_Roberts_CV.pdf');
+    const filePath = path.join(process.cwd(), 'public', 'JRFullstackResume.pdf');
     const fileBuffer = fs.readFileSync(filePath);
 
     // Set the appropriate headers for PDF download
     const headers = {
       'Content-Type': 'application/pdf',
-      'Content-Disposition': 'attachment; filename="Jordan_Roberts_CV.pdf"',
+      'Content-Disposition': 'attachment; filename="JRFullstackResume.pdf"',
     };
 
     // Return the file as a response
