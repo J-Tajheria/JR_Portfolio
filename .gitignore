@@ -36,7 +36,6 @@ yarn-error.log*
 next-env.d.ts
 
 # Large media files
-*.png
 *.jpg
 *.jpeg
 *.gif
@@ -50,3 +49,11 @@ next-env.d.ts
 !public/*.jpeg
 !public/*.gif
 !public/*.pdf
+
+# Keep assets directory and its media files
+!assets/
+!assets/*.png
+!assets/*.jpg
+!assets/*.jpeg
+!assets/*.gif
+!assets/*.pdf
