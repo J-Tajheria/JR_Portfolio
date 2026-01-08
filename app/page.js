@@ -3,7 +3,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/Aboutme";
-import Projects from "./components/projects";
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Chat from "./components/Chat";
